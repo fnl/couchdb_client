@@ -26,7 +26,7 @@ Synopsis/Usage:
   });
 ```
 
-API Documentation: [see jsdoc](master/jsdoc/index.html)
+API Documentation: see jsdoc/index.html
 
 ID/name policy: Database names may contain any character (as long as CouchDB
 permits it). Document IDs may contain any character, but not start with an _
