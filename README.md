@@ -15,15 +15,34 @@ running at localhost:5984.
 Synopsis/Usage:
 
 ```javascript
-  var api = require('couch_client/lib/api'),
-      server = api.Server('http://user:pass@localhost:5984');
-      db = server.database('funny chars/in db name!?'),
-      ddoc = { foo: 'bar', _id: '_design/ex/ample&?' };
-  
-  db.save(ddoc, function (err, json) {
-    if (err) throw err;
-    console.log('saved as', json.id, '(' + ddoc._rev + ')');
-  });
+var api = require('./lib/api'),
+    server = api.Server('http://localhost:5984'),
+    ddoc = {
+      views: { simple: { map: function (doc) { emit(null, doc) } } },
+      _id: '_design/example'
+    },
+    db,
+    example_view;
+
+// create a database
+server.create('hello_world', function (err) { if (err) console.log(err) });
+db = server.database('hello_world');
+
+// save some documents
+db.save(ddoc, function (err, json) {
+  if (err) console.log(err);
+  console.log('design saved as', json.id, '(' + ddoc._rev + ')');
+});
+db.save({foo: 'bar'}, function (err) { if (err) console.log(err) });
+
+// query the view
+example_view = db.view('example/simple');
+example_view.query({ include_docs: true }, function (err, json) {
+  if (err) console.log(err);
+  for (var i = json.rows.length; i--;) {
+    console.log(json.rows[i].doc.foo); // logs 'bar'
+  }
+});
 ```
 
 API Documentation: see jsdoc/index.html
@@ -34,7 +53,8 @@ permits it). Document IDs may contain any character, but not start with an _
 contain a /, too). Design document and local document IDs may contain any character
 (although you are well advised to stick with ASCII only for design documents).
 Function names (views, shows, lists, ...) may contain any characters (ASCII only
-advisable...).
+advisable...). However, keep in mind that CouchDB name policy is *far* stricter
+than this!
 
 License: [MIT](http://www.opensource.org/licenses/mit-license.php)
 
