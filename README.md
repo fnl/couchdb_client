@@ -47,14 +47,15 @@ example_view.query({ include_docs: true }, function (err, json) {
 
 API Documentation: see jsdoc/index.html
 
-ID/name policy: Database names may contain any character (as long as CouchDB
-permits it). Document IDs may contain any character, but not start with an _
-(a CouchDB policy, this client would accept those names as long as they do not
-contain a /, too). Design document and local document IDs may contain any character
-(although you are well advised to stick with ASCII only for design documents).
-Function names (views, shows, lists, ...) may contain any characters (ASCII only
-advisable...). However, keep in mind that CouchDB name policy is *far* stricter
-than this!
+**ID/name policy for documents and databases**: Database names may contain any
+character (as long as CouchDB permits it). Document IDs may contain any character,
+but not start with an _ (a CouchDB policy, this client would accept those names as
+long as they do not contain a /, too). Design document and local document IDs may
+contain any characters, except /s in design document IDs (although you are well
+advised to stick with ASCII only for design documents). Function names (views,
+shows, lists, ...) may contain any characters (ASCII only advisable...). However,
+keep in mind that CouchDB name policy is (except for slashes in design document IDs)
+*far* more strict than all these "limitations"!
 
 License: [MIT](http://www.opensource.org/licenses/mit-license.php)
 
