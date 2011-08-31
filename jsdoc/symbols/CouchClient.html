@@ -1,0 +1,1415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - CouchClient</title>
+
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+	padding: 8px;
+}
+
+#content
+{
+	margin-left: 190px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+	background-color: #7F8FB1;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px #7F8FB1 solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+</div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/CouchAPI.html">CouchAPI</a></li>
+	
+	<li><a href="../symbols/CouchClient.html">CouchClient</a></li>
+	
+	<li><a href="../symbols/Database.html">Database</a></li>
+	
+	<li><a href="../symbols/HttpError.html">HttpError</a></li>
+	
+	<li><a href="../symbols/List.html">List</a></li>
+	
+	<li><a href="../symbols/Server.html">Server</a></li>
+	
+	<li><a href="../symbols/Show.html">Show</a></li>
+	
+	<li><a href="../symbols/Update.html">Update</a></li>
+	
+	<li><a href="../symbols/View.html">View</a></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class CouchClient
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				
+				
+				
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class CouchClient.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/CouchClient.html#constructor">CouchClient</a></b>(url_string, headers)
+							</div>
+							<div class="description">Create a new general-purpose client for a CouchDB.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class CouchClient.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/CouchClient.html#default_content_type">default_content_type</a></b>
+								</div>
+								<div class="description">to use for requests</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/CouchClient.html#options">options</a></b>
+								</div>
+								<div class="description">defaults for requests</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/CouchClient.html#protocol">protocol</a></b>
+								</div>
+								<div class="description">schema; 'https:' or ['http:']</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class CouchClient.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#copy">copy</a></b>(options, callback)
+								</div>
+								<div class="description">Make a COPY request.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#delete">delete</a></b>(options, callback)
+								</div>
+								<div class="description">Make a DELETE request.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#get">get</a></b>(options, callback)
+								</div>
+								<div class="description">Make a GET request.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#getBaseUrl">getBaseUrl</a></b>()
+								</div>
+								<div class="description">Return the base URL (schema, host, port) for this client.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#getHeaders">getHeaders</a></b>()
+								</div>
+								<div class="description">Return all default headers for this client.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#getPath">getPath</a></b>(opt_path;)
+								</div>
+								<div class="description">Return a request path, optionally extended by an opt_path string.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#getQuery">getQuery</a></b>(query_opts;)
+								</div>
+								<div class="description">Return the default query string (including the '?') of this client.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#getUrl">getUrl</a></b>()
+								</div>
+								<div class="description">Return the full URL for this client.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#head">head</a></b>(options, callback)
+								</div>
+								<div class="description">Make a HEAD request.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#post">post</a></b>(options, callback)
+								</div>
+								<div class="description">Make a POST request.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#put">put</a></b>(options, callback)
+								</div>
+								<div class="description">Make a PUT request.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#request">request</a></b>(options, callback)
+								</div>
+								<div class="description">Make a request to the CouchDB - <b>all</b> requests are routed through here.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#resource">resource</a></b>()
+								</div>
+								<div class="description">Create a new CouchClient for a specific resource path.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#setCredentials">setCredentials</a></b>(username, password)
+								</div>
+								<div class="description">Set the authentication credentials.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#setUrl">setUrl</a></b>(url_string)
+								</div>
+								<div class="description">Change the client's URL, overriding all options and the protocol.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CouchClient.html#toString">toString</a></b>()
+								</div>
+								<div class="description">Simple string representation: "[object CouchClient {URL}]".</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>CouchClient</b>(url_string, headers)
+				</div>
+				
+				<div class="description">
+					Create a new general-purpose client for a CouchDB.
+
+In most other case you will want to use the higher level CouchAPI.
+However, to understand the powers of the API, you should read the
+documentation of the CouchClient provided here, too.
+
+<p>In a nutshell, CouchClient works just as Node's HTTP client works:
+<pre>
+request = client.request(options, function (response) { ... });
+</pre>
+However, there are several things going on to make handling requests
+easier: To not have to specifiy the HTTP method verb, the common CouchDB
+request methods are provided directly: GET, POST, PUT, DELETE, HEAD, and
+COPY are provided as methods of their own. This means, the method does not
+have to be added to the request options each time a request other than GET
+(the default method) is made. All request methods allow you to just
+use a string - the request path - instead of a options Object. The post
+and put methods accept the data to send as a options property; data must
+be a string, Buffer, Array, or a (JSON) Object. The Content-Length header
+is calculated and set and the default Content-Type header is added for you.
+</p>
+
+<p>Requests are <b>never</b> ended for you. This means, for any
+non-streaming requests, and if you do not need to listen to
+request errors, you can ignore the return value of the request methods.
+To listen to errors, you have to keep in mind three things:
+<dl>
+  <dt>request errors</dt>
+  <dd>use <code>request.on('error', callback)</code>;
+  this is default Node behavior and should be put <i>before</i> the call
+  to <code>request.end()</code></dd>
+
+  <dt>raw response errors</dt>
+  <dd>use <code>response.on('close', callback)</code>;
+  this is default Node behavior - but note "<b>close</b>" vs. "error"</dd>
+</dl>
+
+If you want the usual "callback(err, success)" pattern, look at the
+specialized CouchAPI.
+					<br /><i>Author: </i>&copy; <a href="mailto:florian.leitner@gmail.com">Florian Leitner</a>.
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								<span class="light fixedFont">{String}</span>  <b>url_string</b>
+								
+							</dt>
+								<dd>['http://localhost:5984/']; optional</dd>
+						
+							<dt>
+								<span class="light fixedFont">{Object}</span>  <b>headers</b>
+								
+							</dt>
+								<dd>default request headers; optional</dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						<dl class="detailList">
+						<dt class="heading">See:</dt>
+						
+							<dd><a href="../symbols/CouchAPI.html">CouchAPI</a></dd>
+						
+						</dl>
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name="default_content_type"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>default_content_type</b>
+					
+					</div>
+					<div class="description">
+						to use for requests
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="options"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>options</b>
+					
+					</div>
+					<div class="description">
+						defaults for requests
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="protocol"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>protocol</b>
+					
+					</div>
+					<div class="description">
+						schema; 'https:' or ['http:']
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="copy"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>copy</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a COPY request.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> events.EventEmitter; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/CouchClient.html#request">CouchClient#request</a> for more information</dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="delete"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>delete</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a DELETE request.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> events.EventEmitter; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/CouchClient.html#request">CouchClient#request</a> for more information</dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="get"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>get</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a GET request.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> events.EventEmitter; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/CouchClient.html#request">CouchClient#request</a> for more information</dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getBaseUrl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>getBaseUrl</b>()
+					
+					</div>
+					<div class="description">
+						Return the base URL (schema, host, port) for this client.
+
+Plain-text authentication details are included, too.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHeaders"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>getHeaders</b>()
+					
+					</div>
+					<div class="description">
+						Return all default headers for this client.
+
+Adds in the #default_content_type parameter.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPath"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>getPath</b>(opt_path;)
+					
+					</div>
+					<div class="description">
+						Return a request path, optionally extended by an opt_path string.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>opt_path;</b>
+									
+								</dt>
+								<dd>optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getQuery"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>getQuery</b>(query_opts;)
+					
+					</div>
+					<div class="description">
+						Return the default query string (including the '?') of this client.
+
+Optionally replaces or adds to the default query object parameters.
+If no query parameters exist, an empty string is returned.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>query_opts;</b>
+									
+								</dt>
+								<dd>optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUrl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>getUrl</b>()
+					
+					</div>
+					<div class="description">
+						Return the full URL for this client.
+
+Authentication details and query parameters are included <i>as plain
+text</i>, too.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="head"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>head</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a HEAD request.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> events.EventEmitter; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/CouchClient.html#request">CouchClient#request</a> for more information</dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="post"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>post</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a POST request.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> events.EventEmitter; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/CouchClient.html#request">CouchClient#request</a> for more information</dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="put"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>put</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a PUT request.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> events.EventEmitter; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/CouchClient.html#request">CouchClient#request</a> for more information</dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="request"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{http.ClientRequest}</span>
+					<b>request</b>(options, callback)
+					
+					</div>
+					<div class="description">
+						Make a request to the CouchDB - <b>all</b> requests are routed through here.
+
+<b>NB:</b> The <code>request#end</code> method is <i>not</i> called on the
+request, so do not forget to do so!
+Request options can have "query" and "data" properties in addition to the
+traditional <code>http#request</code> options.
+
+<p>The <b>query</b> property is an object with query parameters that will be
+appended to the path, replacing possible default query options.</p>
+
+<p><b>POST and PUT data</b> will make use of the "data" option: Strings,
+Buffers, or Arrays set on the data property are sent as is, using
+<code>request.write(options.data)</code>. If the data is an EventEmitter
+(eg., a HttpRequest object), each the Transfer-Encoding header will be
+set to "chunked" for the request and each time the emitter emits data,
+it is piped into the request. Note that you should then use something
+like <code>data.on('end', function () { request.end() })</code> on the
+request object returned here instead of calling request#end directly.
+Other types than strings, buffers, arrays, and emitters will be serialized
+to JSON strings before sending them. So to send strings or arrays as JSON
+data, they need to be serialized manually. Functions will be serialzed
+to strings, too. The only case that data is <b>not serialized and sent</b>
+is if the data is <code>null</code> or <code>undefined</code>.
+Finally, the following headers will be added to POST and PUT requests
+<i>unless</i> they are overridden by the default or request options:
+<dl>
+  <dt>Content-Type</dt>
+  <dd>The client's #default_content_type property (normally,
+  "application/json;charset=utf-8").</dd>
+
+  <dt>Content-Length</dt>
+  <dd>The byte length of the request body will be added <i>unless</i> the
+  Transfer-Encoding header is present or the options.data is an
+  EventEmitter.</dd>
+  
+  <dt>Transfer-Encoding</dt>
+  <dd>Set to "chunked", but only if otions.data is an EventEmitter.</dd>
+
+  <dt>Expect</dt>
+  <dd><i>Unless</i> Content-Length is null or unset, the Expect header
+  will be set to "100-continue".</dd>
+  <dt>
+</dl></p>
+
+<p>The <b>request path</b> is built out of the clients default path,
+appending the <code>options.path</code> if present. Then the default
+query options of the client plus any specific <code>options.query</code>
+settings for this request are appended. So, for example, to fetch a
+document for a specific revision, if you have a client with the URL
+already set to the database, the "path" option for this request only needs
+to contain the (URL-encoded) document id, and the "query" option would
+simply be <code>{ rev: 'n-...' }</code>:
+<pre>
+server = CouchClient();
+db = server.resource('my_database');
+req = db.request({ path: 'some_document', query: { rev: '1-abcd' },
+                 function (res) {
+  var body = []
+  // error handling code should go here...
+  res.on('data', function (chunk) {
+    chunk && body.push(chunk);
+  });
+  res.on('end' function {} {
+     // do something with the body...
+  });
+});
+// error handling code should go here...
+req.end();
+</pre></p>
+
+<p>All request options therefore be set as client-wide defaults for every
+request, or fine-tuned per request. For example, to append
+"?key=something" to the path of every request of a view by default, do:
+<pre>
+// NB - normally, you might want to use the specialized API, naturally!
+server = CouchClient();
+view = server.resource('db', '_design', 'ddoc', '_view', 'viewname');
+view.options.query = { key: 'something' };
+view.request(callback); // no options at all need to request the view!
+</pre></p>
+
+<p>For the default request options, please refer to the 
+<code>http#request</code> documentation of Node.</p>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Object}</span> <b>options</b>
+									
+								</dt>
+								<dd>or path; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>callback</b>
+									
+								</dt>
+								<dd>-> http.ClientResponse; optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="resource"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/CouchClient.html">CouchClient</a>}</span>
+					<b>resource</b>()
+					
+					</div>
+					<div class="description">
+						Create a new CouchClient for a specific resource path.
+
+Each component is URL-encoded.
+
+Examples:
+<pre>
+client = CouchClient();
+new_client = client.resource('database', 'doc id with / inside');
+// -> http://localhost:5984/database/doc%20id%20with%20%2F%20inside
+new_client = client.resource(['database', '_design']);
+// -> http://localhost:5984/database/_design
+new_client = client.resource('_info');
+// -> http://localhost:5984/_info
+copied_client = client.resource();
+// -> http://localhost:5984/
+</pre>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String || Array}</span> <b>components...</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{TypeError}</span>  <b></b>
+								</dt>
+								<dd>If not all components are strings.</dd>
+							
+							</dl>
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setCredentials"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{this}</span>
+					<b>setCredentials</b>(username, password)
+					
+					</div>
+					<div class="description">
+						Set the authentication credentials.
+
+Clears the credentials if no parameters are applied.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>username</b>
+									
+								</dt>
+								<dd>'username' or 'username:password'; optional</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>password</b>
+									
+								</dt>
+								<dd>optional</dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{TypeError}</span>  <b></b>
+								</dt>
+								<dd>If username or password is present, but not a string.</dd>
+							
+							</dl>
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUrl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{this}</span>
+					<b>setUrl</b>(url_string)
+					
+					</div>
+					<div class="description">
+						Change the client's URL, overriding all options and the protocol.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>url_string</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="toString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>toString</b>()
+					
+					</div>
+					<div class="description">
+						Simple string representation: "[object CouchClient {URL}]".
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Wed Aug 31 2011 17:06:35 GMT+0200 (CEST)
+		</div>
+	</body>
+</html>
