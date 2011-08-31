@@ -22,11 +22,11 @@ Synopsis/Usage:
   
   db.save(ddoc, function (err, json) {
     if (err) throw err;
-    console.log('saved as', json.id, ' (' + ddoc._rev + ')');
+    console.log('saved as', json.id, '(' + ddoc._rev + ')');
   });
 ```
 
-API Documentation: [see jsdoc](jsdoc/index.html)
+API Documentation: [see jsdoc](master/jsdoc/index.html)
 
 ID/name policy: Database names may contain any character (as long as CouchDB
 permits it). Document IDs may contain any character, but not start with an _
